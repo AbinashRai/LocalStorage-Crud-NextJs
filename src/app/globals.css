@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  padding: 20px;
+  background: #84cdca;
+}
+.container {
+  width: 50% !important;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  margin: 1rem auto 4rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container-profile {
+  width: 80%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  margin: auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.container header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+}
+.container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #333;
+}
+
+/* to remove the arrows from the number input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.form .input-box input,
+.form .select-box {
+  height: 40px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.address input,
+.address .select-box {
+  margin-top: 12px;
+}
+
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+.form button {
+  height: 45px;
+  width: 50%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  background: #84cdca;
+  margin: 25px auto 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form button:hover {
+  background: #40b3a2;
+}
+
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+}
+
+/* css for table */
+.content-table {
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 25px auto;
+  width: 95%;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-table thead tr {
+  background-color: #c9e2e1;
+  color: black;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.delete,
+.edit {
+  cursor: pointer;
+  font-size: 15px;
+  background-color: none;
+}
+
+.delete {
+  color: red;
+}
+
+.edit {
+  margin-right: 10px;
+}
+
+button {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px !important;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 1200px) {
+  .user-table {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .delete {
+    margin-top: 10px;
+  }
+}
+
+.user-card.mb-4.p-3.card {
+  border: 2px solid #333;
+}
+
+.para {
+  margin-bottom: 3px;
+}
+
+.no-users {
+  text-align: center;
+}
