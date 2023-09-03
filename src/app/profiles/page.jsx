@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { useEffect, useState } from "react";
-import EditModal from "@/app/components/Modal";
+import EditModal from "@/components/Modal";
 
 const Profiles = () => {
   const [editData, setEditData] = useState(null);
