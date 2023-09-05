@@ -14,7 +14,7 @@ Built with:
 
 ## Getting Started
 
-### Dependencies
+### Program Requirement 
 
 * Nodejs on your system
 
